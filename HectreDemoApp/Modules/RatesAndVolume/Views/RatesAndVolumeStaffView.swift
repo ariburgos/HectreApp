@@ -61,11 +61,15 @@ class RatesAndVolumeStaffView: UIView {
     }
     
     @IBAction func didTapPieceRateButton(_ sender: Any) {
+        guard let staffIndex = staffIndex else { return }
         selectPieceRate()
+        delegate?.updateRateType(for: staffIndex, rateType: .pieceRate)
     }
     
     @IBAction func didTapWagesButton(_ sender: Any) {
+        guard let staffIndex = staffIndex else { return }
         selectWages()
+        delegate?.updateRateType(for: staffIndex, rateType: .wages)
     }
     
     @IBAction func didTapApplyToAllButton(_ sender: Any) {
