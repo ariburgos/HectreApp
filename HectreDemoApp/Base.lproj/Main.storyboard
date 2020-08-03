@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OW3-Qw-Ehn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rates And Volume View Controller-->
+        <scene sceneID="wtU-j2-Isw">
+            <objects>
+                <viewController storyboardIdentifier="RatesAndVolumeViewController" id="OW3-Qw-Ehn" customClass="RatesAndVolumeViewController" customModule="HectreDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rlB-8J-BgD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yk-pL-c7j">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJV-Ai-Mlv">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="192"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XnV-HM-VSo">
+                                                <rect key="frame" x="8" y="16" width="398" height="106"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kX7-LR-84I" customClass="BorderCornerView" customModule="HectreDemoApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="49"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3CB-oD-Qax">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="48"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="ymM-Fm-ZJ3"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hmu-k1-nz0">
+                                                                <rect key="frame" x="0.0" y="48" width="398" height="1"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ss-do-4nn">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="1"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="1" id="WgQ-lb-r8l"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <accessibility key="accessibilityConfiguration" label="pruningView"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="3CB-oD-Qax" secondAttribute="trailing" id="EBQ-ip-ioS"/>
+                                                            <constraint firstItem="hmu-k1-nz0" firstAttribute="leading" secondItem="kX7-LR-84I" secondAttribute="leading" id="H1q-K1-7aR"/>
+                                                            <constraint firstItem="3CB-oD-Qax" firstAttribute="leading" secondItem="kX7-LR-84I" secondAttribute="leading" id="KoQ-3h-2xj"/>
+                                                            <constraint firstAttribute="bottom" secondItem="hmu-k1-nz0" secondAttribute="bottom" id="Ngh-YH-lu6"/>
+                                                            <constraint firstItem="hmu-k1-nz0" firstAttribute="top" secondItem="3CB-oD-Qax" secondAttribute="bottom" id="WaN-9j-YUq"/>
+                                                            <constraint firstItem="3CB-oD-Qax" firstAttribute="top" secondItem="kX7-LR-84I" secondAttribute="top" id="bRk-Qn-HDA"/>
+                                                            <constraint firstAttribute="trailing" secondItem="hmu-k1-nz0" secondAttribute="trailing" id="p3X-ky-Fxp"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="GreyTone3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHQ-CG-lFJ" customClass="BorderCornerView" customModule="HectreDemoApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="57" width="398" height="49"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPu-PG-umz">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="48"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="YQN-r4-i73"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aNB-CS-Wgv">
+                                                                <rect key="frame" x="0.0" y="48" width="398" height="1"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmN-Da-6x9">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="1"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="1" id="1EQ-lx-14I"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <accessibility key="accessibilityConfiguration" label="thiningView"/>
+                                                        <constraints>
+                                                            <constraint firstItem="aNB-CS-Wgv" firstAttribute="top" secondItem="cPu-PG-umz" secondAttribute="bottom" id="SdR-jO-rpv"/>
+                                                            <constraint firstItem="aNB-CS-Wgv" firstAttribute="leading" secondItem="MHQ-CG-lFJ" secondAttribute="leading" id="fY9-Tj-dvh"/>
+                                                            <constraint firstAttribute="trailing" secondItem="cPu-PG-umz" secondAttribute="trailing" id="gEy-jB-GOM"/>
+                                                            <constraint firstItem="cPu-PG-umz" firstAttribute="leading" secondItem="MHQ-CG-lFJ" secondAttribute="leading" id="l3J-KZ-5CU"/>
+                                                            <constraint firstAttribute="trailing" secondItem="aNB-CS-Wgv" secondAttribute="trailing" id="m4q-7V-2bs"/>
+                                                            <constraint firstItem="cPu-PG-umz" firstAttribute="top" secondItem="MHQ-CG-lFJ" secondAttribute="top" id="tsl-Kr-KdJ"/>
+                                                            <constraint firstAttribute="bottom" secondItem="aNB-CS-Wgv" secondAttribute="bottom" id="zgf-RX-8D0"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="GreyTone3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es7-6e-zmV" customClass="CornerButton" customModule="HectreDemoApp" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="138" width="366" height="42"/>
+                                                <color key="backgroundColor" name="MainColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="NbZ-Cy-VYX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <state key="normal" title="CONFIRM">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didTapConfirmButton:" destination="OW3-Qw-Ehn" eventType="touchUpInside" id="CdJ-vz-lPk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <accessibility key="accessibilityConfiguration" label="mainView"/>
+                                        <constraints>
+                                            <constraint firstItem="XnV-HM-VSo" firstAttribute="top" secondItem="iJV-Ai-Mlv" secondAttribute="top" constant="16" id="BUF-Xr-3rG"/>
+                                            <constraint firstItem="es7-6e-zmV" firstAttribute="top" secondItem="XnV-HM-VSo" secondAttribute="bottom" constant="16" id="SuS-BQ-qZu"/>
+                                            <constraint firstItem="es7-6e-zmV" firstAttribute="leading" secondItem="iJV-Ai-Mlv" secondAttribute="leading" constant="24" id="Y4U-DG-759"/>
+                                            <constraint firstAttribute="trailing" secondItem="XnV-HM-VSo" secondAttribute="trailing" constant="8" id="Ym0-BZ-j2V"/>
+                                            <constraint firstItem="XnV-HM-VSo" firstAttribute="leading" secondItem="iJV-Ai-Mlv" secondAttribute="leading" constant="8" id="iCw-yl-t4Y"/>
+                                            <constraint firstAttribute="bottom" secondItem="es7-6e-zmV" secondAttribute="bottom" constant="12" id="s7k-q4-Rys"/>
+                                            <constraint firstAttribute="trailing" secondItem="es7-6e-zmV" secondAttribute="trailing" constant="24" id="wPr-dW-iOH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iJV-Ai-Mlv" firstAttribute="width" secondItem="0yk-pL-c7j" secondAttribute="width" id="0pu-OJ-Cmu"/>
+                                    <constraint firstAttribute="trailing" secondItem="iJV-Ai-Mlv" secondAttribute="trailing" id="EpL-iU-hzh"/>
+                                    <constraint firstItem="iJV-Ai-Mlv" firstAttribute="height" secondItem="0yk-pL-c7j" secondAttribute="height" priority="250" id="Gm2-Z7-C7Z"/>
+                                    <constraint firstItem="iJV-Ai-Mlv" firstAttribute="top" secondItem="0yk-pL-c7j" secondAttribute="top" id="Kv5-7n-8ZL"/>
+                                    <constraint firstItem="iJV-Ai-Mlv" firstAttribute="leading" secondItem="0yk-pL-c7j" secondAttribute="leading" id="hTb-hj-QRm"/>
+                                    <constraint firstAttribute="bottom" secondItem="iJV-Ai-Mlv" secondAttribute="bottom" id="zFi-fG-pdd"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="1BC-FR-RoH"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="J1P-yX-QhL"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="duy-GJ-Nhx" firstAttribute="trailing" secondItem="0yk-pL-c7j" secondAttribute="trailing" id="1pG-zs-DhE"/>
+                            <constraint firstItem="0yk-pL-c7j" firstAttribute="top" secondItem="duy-GJ-Nhx" secondAttribute="top" id="Jcf-aW-pjv"/>
+                            <constraint firstItem="0yk-pL-c7j" firstAttribute="leading" secondItem="duy-GJ-Nhx" secondAttribute="leading" id="JeU-IO-KMi"/>
+                            <constraint firstItem="duy-GJ-Nhx" firstAttribute="bottom" secondItem="0yk-pL-c7j" secondAttribute="bottom" id="tjy-yA-GxL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="duy-GJ-Nhx"/>
+                    </view>
+                    <connections>
+                        <outlet property="pruningHeaderView" destination="3CB-oD-Qax" id="1Cp-di-ELj"/>
+                        <outlet property="pruningStackView" destination="hmu-k1-nz0" id="azy-Vw-F4B"/>
+                        <outlet property="pruningView" destination="kX7-LR-84I" id="DLJ-dB-va1"/>
+                        <outlet property="scrollView" destination="0yk-pL-c7j" id="cos-O1-XqD"/>
+                        <outlet property="thiningHeaderView" destination="cPu-PG-umz" id="dn0-hI-edr"/>
+                        <outlet property="thiningStackView" destination="aNB-CS-Wgv" id="pFT-gk-5yW"/>
+                        <outlet property="thiningView" destination="MHQ-CG-lFJ" id="kXk-g7-Mcx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d0e-lp-WrD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013.6" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="GreyTone3">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.76078431372549016" green="0.4823529411764706" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

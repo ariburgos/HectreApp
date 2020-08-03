@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TreesForRowView" customModule="HectreDemoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trees for row 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxV-LY-4UQ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y55-iM-26N" customClass="BorderCornerView" customModule="HectreDemoApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="16" width="414" height="42"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tfP-0b-k6t">
+                            <rect key="frame" x="16" y="10.5" width="184.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <connections>
+                                <action selector="didSetTextFieldValue:" destination="iN0-l3-epB" eventType="editingDidEnd" id="0ZA-gf-6Ji"/>
+                            </connections>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xD-8H-qwd">
+                            <rect key="frame" x="204.5" y="11" width="5.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="GreyTone2"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="512" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxC-TN-paW">
+                            <rect key="frame" x="214" y="11" width="184" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <color key="textColor" name="GreyTone2"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="QxC-TN-paW" firstAttribute="leading" secondItem="2xD-8H-qwd" secondAttribute="trailing" constant="4" id="38W-Bb-zBF"/>
+                        <constraint firstItem="2xD-8H-qwd" firstAttribute="centerX" secondItem="Y55-iM-26N" secondAttribute="centerX" id="3Of-gZ-syt"/>
+                        <constraint firstAttribute="trailing" secondItem="QxC-TN-paW" secondAttribute="trailing" constant="16" id="Bn4-bz-lQc"/>
+                        <constraint firstItem="QxC-TN-paW" firstAttribute="centerY" secondItem="2xD-8H-qwd" secondAttribute="centerY" id="I9a-Vq-bjR"/>
+                        <constraint firstItem="2xD-8H-qwd" firstAttribute="leading" secondItem="tfP-0b-k6t" secondAttribute="trailing" constant="4" id="LhW-HU-54d"/>
+                        <constraint firstAttribute="height" constant="42" id="OLA-CS-C6q"/>
+                        <constraint firstItem="tfP-0b-k6t" firstAttribute="leading" secondItem="Y55-iM-26N" secondAttribute="leading" constant="16" id="Pn7-NL-YKb"/>
+                        <constraint firstItem="tfP-0b-k6t" firstAttribute="centerY" secondItem="2xD-8H-qwd" secondAttribute="centerY" id="YoA-L2-G8F"/>
+                        <constraint firstItem="2xD-8H-qwd" firstAttribute="centerY" secondItem="Y55-iM-26N" secondAttribute="centerY" id="gDY-wY-ozD"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="GreyTone4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="RF2-ac-aiJ">
+                    <rect key="frame" x="0.0" y="62" width="414" height="21"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VxV-LY-4UQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1yj-ss-3eN"/>
+                <constraint firstItem="Y55-iM-26N" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2IE-Db-4MS"/>
+                <constraint firstItem="RF2-ac-aiJ" firstAttribute="top" secondItem="Y55-iM-26N" secondAttribute="bottom" constant="4" id="4bb-mc-PNK"/>
+                <constraint firstItem="Y55-iM-26N" firstAttribute="top" secondItem="VxV-LY-4UQ" secondAttribute="bottom" constant="4" id="C1F-t9-zTr"/>
+                <constraint firstItem="RF2-ac-aiJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ETZ-tM-NlJ"/>
+                <constraint firstAttribute="trailing" secondItem="Y55-iM-26N" secondAttribute="trailing" id="H5r-Qw-gd8"/>
+                <constraint firstAttribute="bottom" secondItem="RF2-ac-aiJ" secondAttribute="bottom" id="MSi-67-XQl"/>
+                <constraint firstAttribute="trailing" secondItem="VxV-LY-4UQ" secondAttribute="trailing" id="pii-AN-e5G"/>
+                <constraint firstItem="VxV-LY-4UQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sdc-s8-PjZ"/>
+                <constraint firstAttribute="trailing" secondItem="RF2-ac-aiJ" secondAttribute="trailing" id="xSs-3l-a19"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="maxValueLabel" destination="QxC-TN-paW" id="XV1-mv-FFB"/>
+                <outlet property="stackView" destination="RF2-ac-aiJ" id="ECN-u3-uHZ"/>
+                <outlet property="textfield" destination="tfP-0b-k6t" id="kJW-bY-NwC"/>
+                <outlet property="titleLabel" destination="VxV-LY-4UQ" id="Oge-lM-1JE"/>
+            </connections>
+            <point key="canvasLocation" x="57.971014492753625" y="-292.29910714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="GreyTone2">
+            <color red="0.69019607843137254" green="0.69019607843137254" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreyTone4">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

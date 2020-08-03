@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RowInFieldCell" id="CkS-Aw-F4o" customClass="RowInFieldCell" customModule="HectreDemoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8JQ-9P-KKI">
+                <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8oB-Iq-zG6" customClass="RoundedView" customModule="HectreDemoApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvO-hs-5TM">
+                                <rect key="frame" x="0.0" y="10.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="GreyTone1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cmm-Q3-tsU" customClass="RoundedView" customModule="HectreDemoApp" customModuleProvider="target">
+                                <rect key="frame" x="34" y="4" width="4" height="4"/>
+                                <color key="backgroundColor" name="OrangeTone1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="4" id="elg-FQ-Q8P"/>
+                                    <constraint firstAttribute="height" constant="4" id="kl2-Bp-vQv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="GreyTone3"/>
+                        <constraints>
+                            <constraint firstItem="Cmm-Q3-tsU" firstAttribute="top" secondItem="8oB-Iq-zG6" secondAttribute="top" constant="4" id="H6Q-de-h1h"/>
+                            <constraint firstItem="lvO-hs-5TM" firstAttribute="leading" secondItem="8oB-Iq-zG6" secondAttribute="leading" id="TwA-yG-d34"/>
+                            <constraint firstAttribute="trailing" secondItem="lvO-hs-5TM" secondAttribute="trailing" id="gBi-l2-zSg"/>
+                            <constraint firstAttribute="trailing" secondItem="Cmm-Q3-tsU" secondAttribute="trailing" constant="4" id="ggM-AX-594"/>
+                            <constraint firstItem="lvO-hs-5TM" firstAttribute="centerY" secondItem="8oB-Iq-zG6" secondAttribute="centerY" id="mtg-cd-WmZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="8oB-Iq-zG6" secondAttribute="bottom" id="HYQ-HV-eor"/>
+                    <constraint firstItem="8oB-Iq-zG6" firstAttribute="leading" secondItem="8JQ-9P-KKI" secondAttribute="leading" id="WGb-DP-uUQ"/>
+                    <constraint firstAttribute="trailing" secondItem="8oB-Iq-zG6" secondAttribute="trailing" id="nsR-q7-c2d"/>
+                    <constraint firstItem="8oB-Iq-zG6" firstAttribute="top" secondItem="8JQ-9P-KKI" secondAttribute="top" id="xGF-Ck-LCv"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="42" height="42"/>
+            <connections>
+                <outlet property="dotView" destination="Cmm-Q3-tsU" id="NPR-I6-Flh"/>
+                <outlet property="mainLabel" destination="lvO-hs-5TM" id="lOq-Cn-3Ri"/>
+                <outlet property="mainView" destination="8oB-Iq-zG6" id="fkn-HQ-ta5"/>
+            </connections>
+            <point key="canvasLocation" x="213.04347826086959" y="46.205357142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="GreyTone1">
+            <color red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreyTone3">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OrangeTone1">
+            <color red="0.85882352941176465" green="0.5725490196078431" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
